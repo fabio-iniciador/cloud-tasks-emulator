@@ -1,0 +1,9 @@
+version: '3'
+services:
+    gcloud-tasks-emulator:
+      image: ghcr.io/aertje/cloud-tasks-emulator:latest
+      command: "go run ./ -host localhost -port 8123 -queue projects/iniciador-int-staging/locations/us-east1/queues/testing"
+      ports:
+        - "${TASKS_PORT:-8123}:8123"
+      environment:
+        APP_ENGINE_EMULATOR_HOST: http://localhost:8080

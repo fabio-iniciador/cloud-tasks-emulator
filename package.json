@@ -1,0 +1,20 @@
+{
+  "name": "cloud-tasks-emulator",
+  "version": "1.0.0",
+  "description": "This emulator tries to emulate the behaviour of Google Cloud Tasks.\r As of this writing, Google does not provide a Cloud Tasks emulator, which makes local development and testing a bit tricky. This project aims to help you out until they do release an official emulator.",
+  "main": "index.js",
+  "scripts": {
+    "start": "go run ./ -host localhost -port 8123 -queue projects/iniciador-int-staging/locations/us-east1/queues/testing",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabio-iniciador/cloud-tasks-emulator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabio-iniciador/cloud-tasks-emulator/issues"
+  },
+  "homepage": "https://github.com/fabio-iniciador/cloud-tasks-emulator#readme"
+}
