@@ -4,7 +4,7 @@
   "description": "This emulator tries to emulate the behaviour of Google Cloud Tasks.\r As of this writing, Google does not provide a Cloud Tasks emulator, which makes local development and testing a bit tricky. This project aims to help you out until they do release an official emulator.",
   "main": "index.js",
   "scripts": {
-    "start": "go run ./ -host localhost -port 8123 -queue projects/iniciador-int-staging/locations/us-east1/queues/testing -queue projects/iniciador-int-staging/locations/us-east1/queues/iniciador_webhook",
+    "start": "go run ./ -host localhost -port 8123 -queue projects/iniciador-int-staging/locations/us-east1/queues/testing -queue projects/iniciador-int-staging/locations/us-east1/queues/webhook",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
